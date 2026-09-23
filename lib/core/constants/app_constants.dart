@@ -25,7 +25,7 @@ class AppConstants {
   // build/web/resume.pdf on `flutter build web`), rather than through
   // Flutter's asset bundle — this keeps the download/view link a simple,
   // reliable relative URL instead of the bundle's nested asset path.
-  static const String resumeAssetPath = 'assets/resume/Abhijith_AJ_Resume_2026.pdf';
+  static const String resumeAssetPath = 'resume.pdf';
 
   static const String pageTitle = 'Abhijith AJ | Flutter Developer';
   static const String metaDescription =

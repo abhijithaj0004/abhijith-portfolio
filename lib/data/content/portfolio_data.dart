@@ -23,7 +23,7 @@ class PortfolioData {
 
   static const List<Map<String, String>> stats = [
     {'value': '2+', 'label': 'Years Experience'},
-    {'value': '4+', 'label': 'Featured Projects'},
+    {'value': '5+', 'label': 'Featured Projects'},
     {'value': '1000+', 'label': 'Game Templates'},
     {'value': '50%', 'label': 'Rendering Performance Improvement'},
   ];
@@ -193,6 +193,31 @@ class PortfolioData {
       ],
       playStoreUrl:
           'https://play.google.com/store/apps/details?id=com.novelfm.novel',
+    ),
+        Project(
+      title: 'Astro',
+      category: 'Astrology App',
+      company: 'Trilia Solutions',
+      description:
+          'A customer-facing astrology platform app with a companion '
+          'admin web application, supporting live pooja broadcasts, '
+          'slot booking, and one-to-one consultation calls.',
+      technologies: ['Flutter', 'MVVM', 'Dio', 'Provider', 'Agora'],
+      highlights: [
+        'Live pooja broadcast',
+        'Slot booking',
+        'One-to-one calls via Agora',
+        'Customer + admin web app',
+      ],
+      role: 'Flutter Developer',
+      architecture: 'MVVM',
+      contributions: [
+        'Customer-facing app development',
+        'Live pooja broadcast feature',
+        'Slot booking flow',
+        'One-to-one audio/video calling via Agora',
+        'REST API integration with Dio',
+      ],
     ),
     Project(
       title: 'Tickshow',

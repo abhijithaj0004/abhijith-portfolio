@@ -5,8 +5,11 @@ class LaunchUtils {
 
   static Future<void> openUrl(String url) async {
     final uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri, webOnlyWindowName: '_blank');
-    }
+    // Note: deliberately NOT awaiting canLaunchUrl() first — on web that
+    // extra await happens *after* the click event finishes, which makes
+    // Chrome/Safari treat the resulting window.open() as an unrequested
+    // pop-up and silently block it. Calling launchUrl directly keeps it
+    // inside the click's "user gesture" window so the tab actually opens.
+    await launchUrl(uri, webOnlyWindowName: '_blank');
   }
 }

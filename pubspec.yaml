@@ -21,5 +21,3 @@ flutter:
   uses-material-design: true
   # The resume PDF is served as a static file from web/resume.pdf (see
   # README) rather than declared here as a Flutter asset.
-assets:
-  - assets/resume/
