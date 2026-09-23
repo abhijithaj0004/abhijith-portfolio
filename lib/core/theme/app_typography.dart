@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'app_colors.dart';
 
 /// Font-size / weight scale. Uses the platform default font family
 /// (no external font fetch, so it stays reliable on Flutter Web).
